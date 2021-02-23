@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* header .top */
 header .top {
   margin: 0 auto;
   width: 1200px;
@@ -50,8 +51,7 @@ header .top .control ul li button {
 }
 
 header .sns {
-  margin-left: 12px;
-  /* position: relative; */
+  position: relative;
 }
 
 header .top > div {
@@ -59,10 +59,15 @@ header .top > div {
   align-items: center;
 }
 
-header .top .partition {
-  display: inline-block;
-  width: 2px;
+
+header .sns:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 1px;
   height: 30px;
+  transform: translateY(-50%);
   background-color: #d3d3d3;
 }
 
@@ -74,5 +79,75 @@ header .sns li img {
 header .sns li img:first-child {
   margin-left: 24px;
 }
-/* \e913
-\e91a */
+
+
+
+
+/* header .btm  */
+header .btm{
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+header .btm >div{
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .btm >div .lnb ul{
+  display: flex;
+}
+
+header .btm >div .lnb ul li a{
+display: inline-block;
+  line-height: 59px;
+  padding: 0 40px;
+  color: #333;
+  font-size: 22px;
+}
+
+header .btm >div .spot {
+font-size: 0;
+}
+
+
+
+header .btm >div .spot a{
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 59px;
+  font-size: 15px;
+  color: #666;
+  position: relative;
+}
+
+header .btm >div .spot a~a:before{
+content: "";
+position: absolute;
+left: 0;
+top: 50%;
+width: 1px;
+height: 10px;
+background: #e3e3e3;
+transform: translateY(-50%);
+}
+
+header .btm .spot *{
+  vertical-align: middle;
+}
+
+header .btm .spot button{
+  background: none;
+}
+
+header .btm .spot button i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  color: #0063b0;
+  font-size: 26px;
+}

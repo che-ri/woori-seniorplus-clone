@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 
-/* header .top */
-header .top {
+/* inner : 모든 콘텐츠의 중앙정렬 역할을 한다.*/
+.inner{
   margin: 0 auto;
   width: 1200px;
+}
+
+
+
+
+/* header .top : header의 윗부분*/
+header .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,15 +90,13 @@ header .sns li img:first-child {
 
 
 
-/* header .btm  */
+/* header .btm  header의 아랫부분*/
 header .btm{
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
 
 header .btm >div{
-  margin: 0 auto;
-  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,18 +106,20 @@ header .btm >div .lnb ul{
 }
 
 header .btm >div .lnb ul li a{
-display: inline-block;
+  display: inline-block;
   line-height: 59px;
   padding: 0 40px;
   color: #333;
   font-size: 22px;
 }
 
+header .btm .spot *{
+  vertical-align: middle;
+}
+
 header .btm >div .spot {
 font-size: 0;
 }
-
-
 
 header .btm >div .spot a{
   display: inline-block;
@@ -134,10 +141,6 @@ background: #e3e3e3;
 transform: translateY(-50%);
 }
 
-header .btm .spot *{
-  vertical-align: middle;
-}
-
 header .btm .spot button{
   background: none;
 }
@@ -150,4 +153,97 @@ header .btm .spot button i{
   height: 59px;
   color: #0063b0;
   font-size: 26px;
+}
+
+
+
+/* section 금융서비스 */
+.block{
+  padding: 100px 0;
+}
+
+.block .title{
+  text-align: center;
+}
+.block .title h2{
+  font-size: 38px;
+  color: #333;
+  line-height:1;  
+}
+
+.block .title p{
+  font-size: 21px;
+  line-height:1;
+  color: #666;
+  margin: 25px 0 40px 0;
+}
+
+.block .banner{
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(2,580px) ;
+  grid-template-rows: repeat(2,280px);
+}
+
+
+/* 배너의 윗단 레이아웃 */
+.block .bnr__left{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block .bnr__left .bg{
+  background: url(./img/bg_ad2.png) no-repeat;
+  background-position: left top;
+}
+
+.block .bnr__left .info{
+  background: linear-gradient(to right, #3194d5, #4fb2f6);
+}
+
+.block .bnr__right{
+display: flex;
+justify-content: space-between;
+}
+
+.block .bnr__right .bg{
+  background: url(./img/bg_ad1.png) no-repeat;
+  background-position: left top;
+  order: 2;
+}
+
+.block .bnr__right .info{
+  background: linear-gradient(to right, #334da4, #3c62b3);
+}
+
+.block .bnr__left div,
+.block .bnr__right div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  color: white;
+}
+
+.bnr .info h3{
+  font-size: 24px;
+  line-height: 31px;
+} 
+.bnr .info p{
+  margin: 15px 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.bnr .info a{
+  display: inline-block;
+  width: 140px;
+  padding: 0 40px;
+  line-height: 40px;
+  background-color: #334da4;
+  color: white;
+  border-radius: 7px;
 }

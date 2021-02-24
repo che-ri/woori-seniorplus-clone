@@ -57,7 +57,7 @@
                 </div>
             </div>
     </header>
-    <section class="block service">
+    <section class="service">
         <div class="inner">
             <div class="title">
                 <h2>금융서비스</h2>
@@ -84,12 +84,78 @@
                         <a href="">바로가기</a>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
+                <article class="bnr__btm event">
+                    <div class="title">
+                        <h3>이벤트</h3>
+                        <a class="btn__more" href="">자세히보기<i class="xi-angle-right-min"></i></a>
+                    </div>
+                    <div class="event__img"></div>
+                </article>
+                <article class="bnr__btm recommend">
+                    <div class="title">
+                        <h3>시니어 추천 금융상품</h3>
+                        <a class="btn__more" href="">자세히보기<i class="xi-angle-right-min"></i></a>
+                    </div>
+                    <div class="swiper-container slide2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img">
+                                        <div class="img"></div>
+                                        <div class="button">
+                                            <button><i class="xi-heart"></i> 관심추가</button>
+                                            <button><i class="xi-pen"></i> 신청하기</button>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>우리국민연금증카드</h4>
+                                        <p>국민연금수급자임을 증명하는 신분증 기능에 버스요금 매월 5천원 지원과 차별화</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hide">slide2
+                                <div class="card__info">
+                                    <div class="card">
+                                        <img src="#" alt="">
+                                        <div>
+                                            <button><i class="xi-heart"></i> 관심추가</button>
+                                            <button><i class="xi-pen"></i> 신청하기</button>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>카드</h4>
+                                        <p>설명</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="control">
+                            <button class="prev"><span class="hide">이전</span></button>
+                            <button class="next"><span class="hide">다음</span></button>
+                        </div>
+                    </div>
+                </article>
             </div>
 
         </div>
     </section>
+    <script>
+        var swiper2 = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.slide2 .prev',
+                prevEl: '.slide2 .next',
+            },
+        });
+    </script>
+    <script src="../package/swiper-bundle.min.js"></script>
 </body>
 
 </html>

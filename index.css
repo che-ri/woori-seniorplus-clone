@@ -3,9 +3,36 @@
 }
 
 /* inner : 모든 콘텐츠의 중앙정렬 역할을 한다.*/
-.inner{
+.inner {
   margin: 0 auto;
   width: 1200px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 
@@ -23,11 +50,11 @@ header .top h1 a:first-child {
   margin-right: 28px;
 }
 
-header .top > div {
+header .top>div {
   display: flex;
 }
 
-header .top > div ul {
+header .top>div ul {
   display: flex;
 }
 
@@ -61,7 +88,7 @@ header .sns {
   position: relative;
 }
 
-header .top > div {
+header .top>div {
   display: flex;
   align-items: center;
 }
@@ -91,21 +118,21 @@ header .sns li img:first-child {
 
 
 /* header .btm  header의 아랫부분*/
-header .btm{
+header .btm {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
 
-header .btm >div{
+header .btm>div {
   display: flex;
   justify-content: space-between;
 }
 
-header .btm >div .lnb ul{
+header .btm>div .lnb ul {
   display: flex;
 }
 
-header .btm >div .lnb ul li a{
+header .btm>div .lnb ul li a {
   display: inline-block;
   line-height: 59px;
   padding: 0 40px;
@@ -113,15 +140,15 @@ header .btm >div .lnb ul li a{
   font-size: 22px;
 }
 
-header .btm .spot *{
+header .btm .spot * {
   vertical-align: middle;
 }
 
-header .btm >div .spot {
-font-size: 0;
+header .btm>div .spot {
+  font-size: 0;
 }
 
-header .btm >div .spot a{
+header .btm>div .spot a {
   display: inline-block;
   padding: 0 25px;
   line-height: 59px;
@@ -130,22 +157,22 @@ header .btm >div .spot a{
   position: relative;
 }
 
-header .btm >div .spot a~a:before{
-content: "";
-position: absolute;
-left: 0;
-top: 50%;
-width: 1px;
-height: 10px;
-background: #e3e3e3;
-transform: translateY(-50%);
+header .btm>div .spot a~a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  background: #e3e3e3;
+  transform: translateY(-50%);
 }
 
-header .btm .spot button{
+header .btm .spot button {
   background: none;
 }
 
-header .btm .spot button i{
+header .btm .spot button i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,66 +185,69 @@ header .btm .spot button i{
 
 
 /* section 금융서비스 */
-.block{
+.service {
   padding: 100px 0;
 }
 
-.block .title{
+.service .title {
   text-align: center;
 }
-.block .title h2{
+
+.service .title h2 {
   font-size: 38px;
   color: #333;
-  line-height:1;  
+  line-height: 1;
+  font-weight: bold;
 }
 
-.block .title p{
+.service .title p {
   font-size: 21px;
-  line-height:1;
+  line-height: 1;
   color: #666;
   margin: 25px 0 40px 0;
+  text-align: center;
 }
 
-.block .banner{
+.service .banner {
   display: grid;
   gap: 28px;
-  grid-template-columns: repeat(2,580px) ;
-  grid-template-rows: repeat(2,280px);
+  grid-template-columns: repeat(2, 580px);
+  grid-template-rows: repeat(2, 280px);
 }
 
 
-/* 배너의 윗단 레이아웃 */
-.block .bnr__left{
+/* 배너의 윗단*/
+.service .bnr__left {
   display: flex;
   justify-content: space-between;
 }
 
-.block .bnr__left .bg{
+.service .bnr__left .bg {
   background: url(./img/bg_ad2.png) no-repeat;
   background-position: left top;
 }
 
-.block .bnr__left .info{
+.service .bnr__left .info {
   background: linear-gradient(to right, #3194d5, #4fb2f6);
 }
 
-.block .bnr__right{
-display: flex;
-justify-content: space-between;
+.service .bnr__right {
+  display: flex;
+  justify-content: space-between;
 }
 
-.block .bnr__right .bg{
+.service .bnr__right .bg {
   background: url(./img/bg_ad1.png) no-repeat;
   background-position: left top;
   order: 2;
 }
 
-.block .bnr__right .info{
+.service .bnr__right .info {
   background: linear-gradient(to right, #334da4, #3c62b3);
 }
 
-.block .bnr__left div,
-.block .bnr__right div{
+.service .bnr__left div,
+.service .bnr__right div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,17 +258,18 @@ justify-content: space-between;
   color: white;
 }
 
-.bnr .info h3{
+.bnr .info h3 {
   font-size: 24px;
   line-height: 31px;
-} 
-.bnr .info p{
+}
+
+.bnr .info p {
   margin: 15px 0;
   font-size: 13px;
   line-height: 24px;
 }
 
-.bnr .info a{
+.bnr .info a {
   display: inline-block;
   width: 140px;
   padding: 0 40px;
@@ -247,3 +278,158 @@ justify-content: space-between;
   color: white;
   border-radius: 7px;
 }
+
+
+
+
+/* 배너의 밑단 헤더영역 설정 */
+.bnr__btm .title {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bnr__btm .title h3 {
+  font-size: 26px;
+  color: #333;
+  line-height: 1;
+  /* line-height: 10px; */
+}
+
+.bnr__btm .title .btn__more {
+  display: block;
+  padding: 15px 0;
+  width: 136px;
+  line-height: 10px;
+  color: #8a8a8a;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.event{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event .event__img{
+  background: url("./img/img_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+
+}
+
+.bnr__btm .title .btn__more i {
+  margin-left: 5px;
+}
+
+
+
+/* 배너의 밑단 recommend 영역 */
+.recommend .slide2 {
+  border-top: 2px solid #333;
+  padding-top: 20px;
+}
+
+.recommend .slide2 .card {
+  display: flex;
+  align-items: center;
+}
+
+.recommend .slide2 .card .card__img {
+  font-size: 0;
+  position: relative;
+}
+
+.recommend .slide2 .card .card__img .img{
+  width: 252px;
+  height: 160px;
+  background-image: url("./img/card.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.recommend .slide2 .card .card__img .button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* right: 0; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.recommend .slide2 .card .card__img .button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #bfc0c2;
+}
+
+.recommend .slide2 .card .card__img div button {
+  font-size: 14px;
+  color: #666;
+  background: none;
+  width: 50%;
+  height: 45px;
+  cursor: pointer;
+}
+
+
+.recommend .slide2 .card .info {
+  margin-left: 35px;
+}
+
+.recommend .slide2 .card .info h4 {
+  line-height: 1;
+  font-size: 26px;
+  color: #333;
+}
+
+.recommend .slide2 .card .info p {
+  position: relative;
+  padding: 36px 0;
+  font-size: 18px;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+
+.recommend .slide2 .card .info p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 36px;
+  height: 2px;
+  background:#288bcc
+}
+
+.recommend .slide2 .control{
+  text-align: center;
+}
+
+.recommend .slide2 .control button{
+  width: 75px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.recommend .slide2 .control button ~ button{
+  border-left: 1px solid #ddd;
+}
+
+.recommend .slide2 .control .prev{
+  background: url("./img/sArrow_prev.png") no-repeat center;
+}
+
+.recommend .slide2 .control .next{
+  background: url("./img/sArrow_next.png") no-repeat center;
+}
+

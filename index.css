@@ -8,6 +8,11 @@
   width: 1200px;
 }
 
+/* title component */
+.title{
+  width: 100%;
+  text-align: center;
+}
 
 .title h2 {
   font-size: 38px;
@@ -21,11 +26,121 @@
   line-height: 1;
   color: #666;
   margin: 25px 0 40px 0;
-  text-align: center;
+
 }
 
 
+/* s-title component */
+.s-title .title {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:74px;
+}
 
+.s-title .title h3 {
+  font-size: 26px;
+  color: #333;
+  line-height: 1;
+  /* line-height: 10px; */
+}
+
+.s-title .title .btn__more {
+  display: block;
+  padding: 15px 0;
+  width: 136px;
+  line-height: 10px;
+  color: #8a8a8a;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.s-title .title .btn__more i {
+  margin-left: 5px;
+}
+
+.s-title .title h3 span{
+  color: #0063b0;
+}
+
+.s-title .content{
+  border-top: 2px solid #333;
+  padding-top: 20px;
+  
+}
+
+.s-title .content>div{
+  display: flex
+}
+
+.s-title .bnr__image{
+  background-color: black;
+  /* background: url(""); */
+  width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.s-title .content .bnr__image .button{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.s-title .content .bnr__image .button::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #bfc0c2;
+}
+
+.s-title .content .bnr__image .button button{
+  font-size: 14px;
+  color: #666;
+  background: none;
+  width: 50%;
+  height: 45px;
+  cursor: pointer;
+}
+
+
+.s-title .content >div .info{
+  margin-left: 35px;
+  width: 50%;
+}
+
+.s-title .content >div .info h4{
+  line-height: 2;
+  font-size: 26px;
+  color: #333;
+}
+
+.s-title .content >div .info span{
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  font-size: 18px;
+  color: #333;
+  letter-spacing: -0.5px;
+  
+}
+.s-title .content >div .info p{
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  letter-spacing: -0.5px;
+  display: inline;
+}
+
+
+/* 제이쿼리 sweiper */
 .swiper-container {
   width: 100%;
   margin-left: auto;
@@ -199,12 +314,6 @@ header .btm .spot button i {
   font-size: 26px;
 }
 
-.title {
-  text-align: center;
-}
-
-
-
 
 /* section 금융서비스 */
 .service {
@@ -287,32 +396,7 @@ header .btm .spot button i {
 
 
 
-/* 배너의 밑단 헤더영역 설정 */
-.bnr__btm .title {
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bnr__btm .title h3 {
-  font-size: 26px;
-  color: #333;
-  line-height: 1;
-  /* line-height: 10px; */
-}
-
-.bnr__btm .title .btn__more {
-  display: block;
-  padding: 15px 0;
-  width: 136px;
-  line-height: 10px;
-  color: #8a8a8a;
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
-  text-align: center;
-}
-
+/* 배너의 밑단 event 영역 */
 .event {
   display: flex;
   flex-direction: column;
@@ -326,10 +410,6 @@ header .btm .spot button i {
   background-repeat: no-repeat;
   height: 100%;
 
-}
-
-.bnr__btm .title .btn__more i {
-  margin-left: 5px;
 }
 
 
@@ -363,7 +443,6 @@ header .btm .spot button i {
   position: absolute;
   left: 0;
   bottom: 0;
-  /* right: 0; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -426,26 +505,36 @@ header .btm .spot button i {
 }
 
 .recommend .slide2 .control button {
-  width: 30px;
+  width: 50px;
   height: 30px;
   cursor: pointer;
   background: none;
+  position: relative;
+}
 
+.recommend .slide2 .control button~button::before{
+  content:"";
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  background-color: #dfdfdf;
+  bottom: 0;
+  left: 0;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: xeicon;
-  font-size: 30px;
-  color: #333;
+  font-family: fontawesome;
+  font-size: 20px;
+  color: #868686;
 }
 
 .swiper-button-prev:after {
-  content: "\e93c";
+  content: "\f053";
 }
 
 .swiper-button-next:after {
-  content: "\e93f";
+  content: "\f054";
 }
 
 
@@ -572,9 +661,68 @@ border-bottom: 2px solid #f9f9f9;
   display: flex;
   align-items: center;
   font-weight: lighter;
+  position: relative;
+}
+
+.fav-info .info .info-list li a::after{
+content: "\f054";
+color: #ddd;
+font-family: fontawesome;
+font-size: 13px;
+position: absolute;
+right: 30px;
+top: 50%;
+transform: translateY(-50%);
+width: 26px;
+height: 26px;
+border: 1px solid #ddd;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 .fav-info .info .info-list li a strong{
   padding: 0 33px ;
   color: #288bcf;
+}
+
+
+
+
+/* 교육/세미나 */
+.education{
+  margin: 100px 0 110px 0;
+}
+
+.education-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  gap: 80px 40px;
+}
+
+
+.education-container .reserv{
+  grid-row: 1/3;
+}
+
+.education .resev__img{
+  display: block;
+  box-sizing: border-box;
+  height: 600px;
+  width: 100%;
+  background: url("./img/reserve.jpg") no-repeat left;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+.education-container .off-class{
+  grid-row: 1/2;
+}
+
+.education-container .on-class{
+  grid-row: 2/3;
 }

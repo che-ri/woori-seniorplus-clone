@@ -9,7 +9,7 @@
 }
 
 /* title component */
-.title{
+.title {
   width: 100%;
   text-align: center;
 }
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:74px;
+  height: 74px;
 }
 
 .s-title .title h3 {
@@ -61,37 +61,38 @@
   margin-left: 5px;
 }
 
-.s-title .title h3 span{
+.s-title .title h3 span {
   color: #0063b0;
 }
 
-.s-title .content >div .info{
+.s-title .content>div .info {
   margin-left: 35px;
   width: 50%;
 }
 
-.s-title .content >div .info h4{
+.s-title .content>div .info h4 {
   line-height: 2;
   font-size: 26px;
   color: #333;
 }
 
-.s-title .content >div .info h4 a{
+.s-title .content>div .info h4 a {
   color: #333;
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.s-title .content >div .info strong{
+.s-title .content>div .info strong {
   display: inline-block;
   margin: 0 5px 5px 0;
   font-size: 18px;
   color: #333;
   letter-spacing: -0.5px;
-  
+
 }
-.s-title .content >div .info p{
+
+.s-title .content>div .info p {
   position: relative;
   font-size: 18px;
   color: #666;
@@ -102,9 +103,10 @@
 
 
 /* 배너의 info영역 */
-.bnr .info{
+.bnr .info {
   text-align: center;
 }
+
 .bnr .info h3 {
   font-size: 25px;
   line-height: 31px;
@@ -482,8 +484,8 @@ header .btm .spot button i {
   position: relative;
 }
 
-.recommend .slide2 .control button~button::before{
-  content:"";
+.recommend .slide2 .control button~button::before {
+  content: "";
   width: 1px;
   height: 25px;
   position: absolute;
@@ -553,21 +555,21 @@ header .btm .spot button i {
   color: #333;
   border: 1px solid #e4e4e4;
   border-right: none;
-  font-weight:lighter;
-  height:100%;
+  font-weight: lighter;
+  height: 100%;
 
 }
 
-.fav-info .fav-info__tab .tab_type1 li:first-child{
+.fav-info .fav-info__tab .tab_type1 li:first-child {
   border-radius: 5px 0 0 5px;
 }
 
-.fav-info .fav-info__tab .tab_type1 li:last-child{
+.fav-info .fav-info__tab .tab_type1 li:last-child {
   border-radius: 0 5px 5px 0;
   border-right: 1px solid #e4e4e4;
 }
 
-.fav-info .fav-info__tab .tab_type1 li a{
+.fav-info .fav-info__tab .tab_type1 li a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -575,11 +577,11 @@ header .btm .spot button i {
   justify-content: center;
 }
 
-.fav-info .fav-info__tab .tab_type1 li a:hover{
-background: #f5f5f5;
+.fav-info .fav-info__tab .tab_type1 li a:hover {
+  background: #f5f5f5;
 }
 
-.fav-info .fav-info__tab .tab_type1 li a i{
+.fav-info .fav-info__tab .tab_type1 li a i {
   margin-right: 8px;
   color: #288bcf;
 }
@@ -612,7 +614,7 @@ background: #f5f5f5;
 
 }
 
-.fav-info .info .info-list{
+.fav-info .info .info-list {
   border-top: 3px solid #288bcf;
   display: flex;
   flex-direction: column;
@@ -620,12 +622,12 @@ background: #f5f5f5;
   background: #fff;
 }
 
-.fav-info .info .info-list li{
-flex: 1;
-border-bottom: 2px solid #f9f9f9;
+.fav-info .info .info-list li {
+  flex: 1;
+  border-bottom: 2px solid #f9f9f9;
 }
 
-.fav-info .info .info-list li a{
+.fav-info .info .info-list li a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -634,27 +636,27 @@ border-bottom: 2px solid #f9f9f9;
   position: relative;
 }
 
-.fav-info .info .info-list li a::after{
-content: "\f054";
-color: #ddd;
-font-family: fontawesome;
-font-size: 13px;
-position: absolute;
-right: 30px;
-top: 50%;
-transform: translateY(-50%);
-width: 26px;
-height: 26px;
-border: 1px solid #ddd;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+.fav-info .info .info-list li a::after {
+  content: "\f054";
+  color: #ddd;
+  font-family: fontawesome;
+  font-size: 13px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
-.fav-info .info .info-list li a strong{
-  padding: 0 33px ;
+.fav-info .info .info-list li a strong {
+  padding: 0 33px;
   color: #288bcf;
 }
 
@@ -662,24 +664,24 @@ justify-content: center;
 
 
 /* 교육/세미나 */
-.education{
+.education {
   margin: 100px 0 110px 0;
 }
 
-.education-container{
+.education-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 80px 40px;
 }
 
 
-.education-container .reserv{
+.education-container .reserv {
   grid-row: 1/3;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
-.education .reserv__thumb{
+.education .reserv__thumb {
   display: block;
   box-sizing: border-box;
   height: 600px;
@@ -690,40 +692,40 @@ justify-content: center;
 }
 
 
-.education-container .off-class{
+.education-container .off-class {
   grid-row: 1/2;
 }
 
-.education-container .on-class{
+.education-container .on-class {
   grid-row: 2/3;
 }
 
-.off-class .bnr__img{
+.off-class .bnr__img {
   background: url("./img/부동산특강.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.on-class .bnr__img{
+.on-class .bnr__img {
   background: url("./img/와인이야기.png");
-  background-position: left ;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-.s-title .content{
+.s-title .content {
   border-top: 2px solid #333;
   padding-top: 20px;
-  
+
 }
 
-.s-title .content>div{
+.s-title .content>div {
   display: flex
 }
 
-.s-title .bnr__img{
+.s-title .bnr__img {
   background-color: black;
   /* background: url(""); */
   width: 250px;
@@ -731,7 +733,7 @@ justify-content: center;
   position: relative;
 }
 
-.s-title .content .bnr__img .button{
+.s-title .content .bnr__img .button {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -741,7 +743,7 @@ justify-content: center;
   background: rgba(255, 255, 255, 0.8);
 }
 
-.s-title .content .bnr__img .button::before{
+.s-title .content .bnr__img .button::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -750,7 +752,7 @@ justify-content: center;
   background: #bfc0c2;
 }
 
-.s-title .content .bnr__img .button button{
+.s-title .content .bnr__img .button button {
   font-size: 14px;
   color: #666;
   background: none;
@@ -769,28 +771,30 @@ justify-content: center;
   background-size: cover;
 }
 
-.trip .title h2, .trip .title p{
+.trip .title h2,
+.trip .title p {
   color: white;
 }
 
-.trip .title p{
+.trip .title p {
   margin-bottom: 65px;
 }
 
-.trip-container{
+.trip-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 440px;
   gap: 25px;
 }
 
-.trip-container div{
+.trip-container div {
   background: #fff;
   position: relative;
   border-radius: 5px;
 }
+
 /* 여행/쇼핑 배너 스탬프영역 */
-.trip-container div .trip-stamp{
+.trip-container div .trip-stamp {
   position: absolute;
   top: -20px;
   right: -10px;
@@ -800,51 +804,51 @@ justify-content: center;
   z-index: 10;
 }
 
-.trip-container .wmp .trip-stamp{
+.trip-container .wmp .trip-stamp {
   background-image: url("./img/icon_we.png");
 }
 
-.trip-container .lotte .trip-stamp{
+.trip-container .lotte .trip-stamp {
   background-image: url("./img/icon_lotte.png");
 }
 
 /* 여행/쇼핑 배너 이미지영역 */
-.trip__bnr-img{
+.trip__bnr-img {
   width: 100%;
   height: 210px;
   margin-bottom: 35px;
 }
 
-.wmp .trip__bnr-img{
+.wmp .trip__bnr-img {
   background: url("./img/travel_1.jpg") center no-repeat;
   background-size: cover;
 }
 
-.lotte .trip__bnr-img{
+.lotte .trip__bnr-img {
   background: url("./img/travel_2.jpg") center no-repeat;
   background-size: cover;
 }
 
-.domestic .trip__bnr-img{
+.domestic .trip__bnr-img {
   background: url("./img/travel_3.jpg") center no-repeat;
   background-size: cover;
 }
 
 /* 여행/쇼핑 배너 info영역 */
-.trip .trip__brn-info{
+.trip .trip__brn-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.trip .trip__brn-info h3{
+.trip .trip__brn-info h3 {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 0;
   color: #333;
 }
 
-.trip .trip__brn-info p{
+.trip .trip__brn-info p {
   text-align: center;
   font-size: 19px;
   width: 80%;
@@ -852,28 +856,28 @@ justify-content: center;
   margin-bottom: 25px;
 }
 
-.wmp .trip__brn-info strong{
+.wmp .trip__brn-info strong {
   color: #ED2626;
 }
 
-.lotte .trip__brn-info strong{
+.lotte .trip__brn-info strong {
   color: #122E80;
 }
 
-.domestic .trip__brn-info strong{
+.domestic .trip__brn-info strong {
   color: #288bcc;
 }
 
 /* 여행/쇼핑 배너 info영역 바로가기 */
-.wmp .trip__brn-info a{
+.wmp .trip__brn-info a {
   background-color: #ED2626;
 }
 
-.lotte .trip__brn-info a{
+.lotte .trip__brn-info a {
   background-color: #122E80;
 }
 
-.domestic .trip__brn-info a{
+.domestic .trip__brn-info a {
   background-color: #288BCC;
 }
 
@@ -881,55 +885,55 @@ justify-content: center;
 
 
 /* 일자리 정보 section */
-.job-info{
+.job-info {
   margin: 100px 0;
 }
 
-.job-info .title{
+.job-info .title {
   margin-bottom: 45px;
 }
 
-.job-info .s-title .title{
+.job-info .s-title .title {
   margin-bottom: 0;
 }
 
-.job-info__content{
+.job-info__content {
   display: flex;
   justify-content: space-between;
 }
 
 
-.job-info__container{
+.job-info__container {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: 1fr 290px;
 }
 
-.job-info__container .title{
+.job-info__container .title {
   grid-column: 1/-2;
   grid-row: 1/2;
   height: auto;
   padding: 0 0 20px 0;
 }
 
-.job-info__container ul{
+.job-info__container ul {
   grid-column: 1/2;
 }
 
-.job-info__container .job-info__bnr{
+.job-info__container .job-info__bnr {
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 20px;
   background: url("./img/노인일자리.png");
 }
 
-.job-info ul{
+.job-info ul {
   display: flex;
   justify-content: space-between;
 }
 
-.job-info ul .content{
+.job-info ul .content {
   border-top: 2px solid #0063b0;
   height: 100%;
   width: 100%;
@@ -937,20 +941,21 @@ justify-content: center;
   text-align: center;
 
 }
-.job-info ul .content:last-child{
+
+.job-info ul .content:last-child {
   margin-right: 0;
 }
 
-.job-info ul .content a{
+.job-info ul .content a {
   width: 100%;
 }
 
 
-.job-info ul .content img{
-margin: 35px 0;
+.job-info ul .content img {
+  margin: 35px 0;
 }
 
-.job-info .content .content-info{
+.job-info .content .content-info {
   width: 80%;
   display: inline-block;
   text-align: start;
@@ -963,28 +968,29 @@ margin: 35px 0;
 }
 
 .job-info ul .content p {
-margin-top: 15px;
-  margin-bottom: 20px;
-font-size: 18px;
-color: #666;
-
+  margin-top: 15px;
+  padding-bottom: 45px;
+  font-size: 18px;
+  color: #666;
+  width: 225px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
 }
 
-.job-info ul .content span{
-  position: relative;
+.job-info ul .content span {
   color: #0063b0;
-  padding-top: 25px;
   font-size: 15px;
   display: block;
 }
 
-.job-info ul .content span::before{
+.job-info ul .content p::before {
   position: absolute;
   content: "";
   width: 35px;
   height: 2px;
   background-color: #0063b0;
-  top: 0;
+  bottom: 26px;
   left: 0;
-  z-index: 99;
 }

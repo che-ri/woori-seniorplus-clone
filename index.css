@@ -676,6 +676,7 @@ justify-content: center;
 
 .education-container .reserv{
   grid-row: 1/3;
+  padding-bottom:20px;
 }
 
 .education .reserv__thumb{
@@ -874,4 +875,116 @@ justify-content: center;
 
 .domestic .trip__brn-info a{
   background-color: #288BCC;
+}
+
+
+
+
+/* 일자리 정보 section */
+.job-info{
+  margin: 100px 0;
+}
+
+.job-info .title{
+  margin-bottom: 45px;
+}
+
+.job-info .s-title .title{
+  margin-bottom: 0;
+}
+
+.job-info__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.job-info__container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr 290px;
+}
+
+.job-info__container .title{
+  grid-column: 1/-2;
+  grid-row: 1/2;
+  height: auto;
+  padding: 0 0 20px 0;
+}
+
+.job-info__container ul{
+  grid-column: 1/2;
+}
+
+.job-info__container .job-info__bnr{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-left: 20px;
+  background: url("./img/노인일자리.png");
+}
+
+.job-info ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-info ul .content{
+  border-top: 2px solid #0063b0;
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+  text-align: center;
+
+}
+.job-info ul .content:last-child{
+  margin-right: 0;
+}
+
+.job-info ul .content a{
+  width: 100%;
+}
+
+
+.job-info ul .content img{
+margin: 35px 0;
+}
+
+.job-info .content .content-info{
+  width: 80%;
+  display: inline-block;
+  text-align: start;
+}
+
+.job-info ul .content strong {
+  font-size: 25px;
+  display: block;
+  color: #333;
+}
+
+.job-info ul .content p {
+margin-top: 15px;
+  margin-bottom: 20px;
+font-size: 18px;
+color: #666;
+
+}
+
+.job-info ul .content span{
+  position: relative;
+  color: #0063b0;
+  padding-top: 25px;
+  font-size: 15px;
+  display: block;
+}
+
+.job-info ul .content span::before{
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #0063b0;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }

@@ -926,6 +926,7 @@ header .btm .spot button i {
   grid-row: 2/3;
   margin-left: 20px;
   background: url("./img/노인일자리.png");
+  border: 1px solid #e4e4e4;
 }
 
 .job-info ul {
@@ -994,3 +995,131 @@ header .btm .spot button i {
   bottom: 26px;
   left: 0;
 }
+
+
+
+
+/* 해피콜 영역 */
+.happycall-box{
+  padding: 40px;
+  border: 1px solid ;
+}
+
+.happycall-title{
+  display: flex;
+  align-items: center;
+}
+
+.happycall-title h2{
+  margin-right: 10px;
+  font-size: 26px;
+}
+
+.happycall-title h2 span{
+color: #3f69b8;
+}
+
+.happycall-title h2 em{
+  color: #8a76b4;
+  font-weight: bold;
+}
+
+.happycall-title p{
+  color: #666;
+  font-size: 16px;
+}
+/* 해피콜 문의하기 영역 */
+.happycall-box .happycall-form{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .happycall-box .happycall-form label{
+    color: #333;
+    font-size: 15px;
+    padding: 0 6px 0 0;
+  }
+  
+  .happycall-box .happycall-form input, .happycall-box .happycall-form select{
+  border: 1px solid #ddd;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 14px;
+  padding-left: 20px;
+  margin: 0 5px;
+  }
+
+  .happycall-box .happycall-form input::-webkit-input-placeholder{
+    font-size: 15px;
+    color: #a9a9a9;
+  }
+
+  .happycall-box .happycall-form button{
+    width: 130px;
+    height: 50px;
+    background-color: #288bcc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  /* 해피콜 문의하기 약관보기 영역 */
+  .happycall-box .checkbox{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .happycall-box .checkbox input[type="checkbox"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29px;
+    height: 25px;
+    margin: 0;
+    opacity: 0;
+    vertical-align: middle;
+    z-index: 99;
+  }
+
+  .happycall-box input[type="checkbox"] + label {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 35px;
+    color: #333;
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+}
+
+.happycall-box input[type="checkbox"]+ label::after {
+  content: '';
+  width: 29px;
+  height: 25px;
+  display: block;
+  background: url("./img/check-none.png") no-repeat 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .2s cubic-bezier(0,0,.01,.98);
+  -webkit-transition: all .2s cubic-bezier(0,0,.01,.98);
+  -moz-transition: all .2s cubic-bezier(0,0,.01,.98);
+}
+
+  .happycall-box input[type="checkbox"]:checked + label::after{
+    background: url("./img/check-on.png");
+
+  }
+
+  .happycall-box .terms{
+    display: inline-block;
+    color: #8b8b8b;
+    text-decoration: underline;
+    margin-left: 20px;
+    vertical-align: -1px;
+  }
+
+  

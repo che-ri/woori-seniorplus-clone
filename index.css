@@ -1122,4 +1122,26 @@ color: #3f69b8;
     vertical-align: -1px;
   }
 
-  
+  /* 파트너섹션 */
+  .partner-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .partner-next, .partner-prev{
+    display: inline;
+  }
+  .partner .partner-card{
+    width: 180px;
+    height: 70px;
+    border: 1px solid #d8d8d8;
+    margin: 5px;
+    display: inline-block;
+  }
+
+
+  .partner .partner-card img{
+    width: 100%;
+    height: 100%;
+  }

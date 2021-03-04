@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="new_swiper.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="index.css">
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"
@@ -387,15 +387,15 @@
     </section>
     <section class="partner">
         <div class="inner">
-            <div class="partner-box">
-                <div class="swiper-button-prev partner-prev"></div>
-                <div class="partner-card"><img src="./img/partner-img1.jpg" alt=""></div>
-                <div class="partner-card"><img src="./img/partner-img2.png" alt=""></div>
-                <div class="partner-card"><img src="./img/partner-img3.png" alt=""></div>
-                <div class="partner-card"><img src="./img/partner-img4.png" alt=""></div>
-                <div class="partner-card"><img src="./img/partner-img5.jpg" alt=""></div>
-                <div class="partner-card"><img src="./img/partner-img6.jpg" alt=""></div>
-                <div class="swiper-button-next partner-next"></div>
+            <div class="partner-box swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img1.jpg" alt=""></div>
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img2.png" alt=""></div>
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img3.png" alt=""></div>
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img4.png" alt=""></div>
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img5.jpg" alt=""></div>
+                    <div class="partner-card swiper-slide"><img src="./img/partner-img6.jpg" alt=""></div>
+                </div>
             </div>
         </div>
     </section>
@@ -409,6 +409,16 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper2 = new Swiper('.partner-box', {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
             },
         });
     </script>

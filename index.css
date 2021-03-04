@@ -1128,7 +1128,15 @@ color: #3f69b8;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+    margin: 0 40px;
+    width: auto;
   }
+
+.partner-box .swiper-wrapper{
+  width: auto;
+  box-sizing: border-box;
+}
+
   .partner-next, .partner-prev{
     display: inline;
   }

@@ -974,7 +974,7 @@ header .btm .spot button i {
   font-size: 18px;
   color: #666;
   width: 225px;
-  overflow:hidden;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   position: relative;
@@ -1000,48 +1000,50 @@ header .btm .spot button i {
 
 
 /* 해피콜 영역 */
-.happycall-box{
+.happycall-box {
   padding: 40px;
-  border: 1px solid ;
+  border: 1px solid;
 }
 
-.happycall-title{
+.happycall-title {
   display: flex;
   align-items: center;
 }
 
-.happycall-title h2{
+.happycall-title h2 {
   margin-right: 10px;
   font-size: 26px;
 }
 
-.happycall-title h2 span{
-color: #3f69b8;
+.happycall-title h2 span {
+  color: #3f69b8;
 }
 
-.happycall-title h2 em{
+.happycall-title h2 em {
   color: #8a76b4;
   font-weight: bold;
 }
 
-.happycall-title p{
+.happycall-title p {
   color: #666;
   font-size: 16px;
 }
+
 /* 해피콜 문의하기 영역 */
-.happycall-box .happycall-form{
+.happycall-box .happycall-form {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
-  }
-  
-  .happycall-box .happycall-form label{
-    color: #333;
-    font-size: 15px;
-    padding: 0 6px 0 0;
-  }
-  
-  .happycall-box .happycall-form input, .happycall-box .happycall-form select{
+}
+
+.happycall-box .happycall-form label {
+  color: #333;
+  font-size: 15px;
+  padding: 0 6px 0 0;
+}
+
+.happycall-box .happycall-form input,
+.happycall-box .happycall-form select {
   border: 1px solid #ddd;
   height: 50px;
   border-radius: 5px;
@@ -1049,53 +1051,54 @@ color: #3f69b8;
   font-size: 14px;
   padding-left: 20px;
   margin: 0 5px;
-  }
-
-  .happycall-box .happycall-form input::-webkit-input-placeholder{
-    font-size: 15px;
-    color: #a9a9a9;
-  }
-
-  .happycall-box .happycall-form button{
-    width: 130px;
-    height: 50px;
-    background-color: #288bcc;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  /* 해피콜 문의하기 약관보기 영역 */
-  .happycall-box .checkbox{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    margin-right: 20px;
-  }
-
-  .happycall-box .checkbox input[type="checkbox"]{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 29px;
-    height: 25px;
-    margin: 0;
-    opacity: 0;
-    vertical-align: middle;
-    z-index: 99;
-  }
-
-  .happycall-box input[type="checkbox"] + label {
-    display: inline-block;
-    cursor: pointer;
-    padding-left: 35px;
-    color: #333;
-    font-size: 16px;
-    line-height: 25px;
-    position: relative;
 }
 
-.happycall-box input[type="checkbox"]+ label::after {
+.happycall-box .happycall-form input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+.happycall-box .happycall-form button {
+  width: 130px;
+  height: 50px;
+  background-color: #288bcc;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* 해피콜 문의하기 약관보기 영역 */
+.happycall-box .checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 20px;
+}
+
+.happycall-box .checkbox input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 29px;
+  height: 25px;
+  margin: 0;
+  opacity: 0;
+  vertical-align: middle;
+  z-index: 99;
+}
+
+.happycall-box input[type="checkbox"]+label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 35px;
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+}
+
+.happycall-box input[type="checkbox"]+label::after {
   content: '';
   width: 29px;
   height: 25px;
@@ -1104,52 +1107,172 @@ color: #3f69b8;
   position: absolute;
   left: 0;
   top: 0;
-  transition: all .2s cubic-bezier(0,0,.01,.98);
-  -webkit-transition: all .2s cubic-bezier(0,0,.01,.98);
-  -moz-transition: all .2s cubic-bezier(0,0,.01,.98);
+  transition: all .2s cubic-bezier(0, 0, .01, .98);
+  -webkit-transition: all .2s cubic-bezier(0, 0, .01, .98);
+  -moz-transition: all .2s cubic-bezier(0, 0, .01, .98);
 }
 
-  .happycall-box input[type="checkbox"]:checked + label::after{
-    background: url("./img/check-on.png");
+.happycall-box input[type="checkbox"]:checked+label::after {
+  background: url("./img/check-on.png");
 
-  }
+}
 
-  .happycall-box .terms{
-    display: inline-block;
-    color: #8b8b8b;
-    text-decoration: underline;
-    margin-left: 20px;
-    vertical-align: -1px;
-  }
+.happycall-box .terms {
+  display: inline-block;
+  color: #8b8b8b;
+  text-decoration: underline;
+  margin-left: 20px;
+  vertical-align: -1px;
+}
 
-  /* 파트너섹션 */
-  .partner-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
-    margin: 0 40px;
-    width: auto;
-  }
+/* 파트너섹션 */
+.partner-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  margin: 0 40px;
+  width: auto;
+}
 
-.partner-box .swiper-wrapper{
+.partner-box .swiper-wrapper {
   width: auto;
   box-sizing: border-box;
 }
 
-  .partner-next, .partner-prev{
-    display: inline;
-  }
-  .partner .partner-card{
-    width: 180px;
-    height: 70px;
-    border: 1px solid #d8d8d8;
-    margin: 5px;
-    display: inline-block;
-  }
+.partner-next,
+.partner-prev {
+  display: inline;
+}
+
+.partner .partner-card {
+  width: 180px;
+  height: 70px;
+  border: 1px solid #d8d8d8;
+  margin: 5px;
+  display: inline-block;
+}
 
 
-  .partner .partner-card img{
-    width: 100%;
-    height: 100%;
-  }
+.partner .partner-card img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* footer 영역 */
+footer {
+  background-color: #F5F5F5;
+  padding: 60px 0;
+  font-weight: 300;
+}
+
+footer .top {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E4E4E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top img{
+  width: 130px;
+  height: 32px;
+}
+
+footer .top ul {
+  display: flex;
+  color: #222;
+}
+
+footer .top li {
+  color: #222;
+  position: relative;
+  margin-right: 30px;
+  font-size: 17px;
+}
+
+footer .top li::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: -15px;
+  width: 2px;
+  height: 15px;
+  background-color: #d9d9d9;
+}
+
+footer .top li:last-child::after{
+  background: none;
+}
+
+#family-shortcut{
+  width: 230px;
+  height: 44px;
+  padding: 0 20px;
+  color: #333;
+  font-weight: 300;
+  font-size: 15px;
+  border: 1px solid #c4c4c4;
+}
+
+footer .btm {
+  padding-top: 28px;
+  color: #adadad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .btm>div{
+  word-spacing: -0.5px;
+  color: #a0a0a0;
+  font-size: 16px;
+}
+
+footer .btm .sns-shortcut{
+  display: flex;
+}
+
+footer .btm .sns-shortcut li{
+  margin-left: 12px;
+  width: 45px;
+  height: 45px;
+  
+}
+
+footer .btm .sns-shortcut li:first-child{
+  margin:0;
+}
+
+footer .btm .sns-shortcut a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .btm .sns-shortcut li:first-child{
+  background: url("./img/sns_1.png") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+footer .btm .sns-shortcut li:nth-child(2){
+  background: url("./img/sns_2.png") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+footer .btm .sns-shortcut li:nth-child(3){
+  background: url("./img/sns_3.png") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+footer .btm .sns-shortcut li:last-child{
+  background: url("./img/sns_4.png") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
